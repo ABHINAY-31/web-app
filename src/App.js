@@ -6,6 +6,7 @@ function App() {
   return (
     // return only one not more than one
     // jsx fragment
+    // done
     <> 
       <div className="my_navigation">
         <nav className="navbar bg-body-tertiary">
@@ -16,7 +17,7 @@ function App() {
               <a className="navbar-brand" href="#">Availability</a>
               <a className="navbar-brand" href="#">Donation Camps</a>
             </div>
-        </nav>
+        </nav> 
         <div className="card">
             <div className="card-val-1"></div>
             <div className="card-val-2"></div>
