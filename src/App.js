@@ -12,17 +12,26 @@ function App() {
         <nav className="navbar bg-body-tertiary">
             <div className="container-fluid">
               {/* <img src="" alt="" /> */}
+              <a className="menu-icon" href="#" onClick="navVisisble()" target="_blank"></a>
               <a className="navbar-brand active" href="#">Home</a>
               <a className="navbar-brand" href="#">Blood Banks</a>
               <a className="navbar-brand" href="#">Availability</a>
               <a className="navbar-brand" href="#">Donation Camps</a>
             </div>
         </nav> 
-        <div className="card">
-            <div className="card-val-1"></div>
-            <div className="card-val-2"></div>
-            <div className="card-val-3"></div>
+        <div className="my-view">
+            <div className="card-description">
+                <p>Spread love everywhere you go. Let no one ever come to you without leaving happier. </p>
+            </div>
+
+            <div className="card">
+                <div className="card-val-1"></div>
+                <div className="card-val-2"></div>
+                <div className="card-val-3"></div>
+            </div>
         </div>
+
+        
       </div>
     </>
       // <h1 className="my_name">Hello everyone</h1>
