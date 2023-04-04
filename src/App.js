@@ -1,7 +1,25 @@
 import './App.css';
+// import './Component/navbar.js'
 // when we do an npm start this particular section will resolve to what we view over the web
 // it's a complete site
 let name="abhinay";
+function navVisible(){
+  const myElement=document.getElementById("navbar-brand");
+  if(myElement!==null){
+    let val = myElement.style.display="block";
+    return val;
+  }
+  else alert("Not having value");
+  
+  // if(nav){
+  //   nav.style.display = "none";
+  // }
+  // else{
+  //   nav.style.display = "block";
+  // }
+  // console.log("printed")
+}
+
 function App() {
   return (
     // return only one not more than one
@@ -12,7 +30,7 @@ function App() {
         <nav className="navbar bg-body-tertiary">
             <div className="container-fluid">
               {/* <img src="" alt="" /> */}
-              <a className="menu-icon" href="#" onClick="navVisisble()" target="_blank"></a>
+              <a className="menu-icon" href="#" onClick={navVisible} target="_blank"></a>
               <a className="navbar-brand active" href="#">Home</a>
               <a className="navbar-brand" href="#">Blood Banks</a>
               <a className="navbar-brand" href="#">Availability</a>
@@ -40,7 +58,7 @@ function App() {
 
         <div className="content-view">
             <div className="blood-type-view">
-              <table cellpadding="10" cellspacing="20">
+              <table cellPadding="10" cellSpacing="20">
                 <thead>
                   <tr>
                     <th>Blood Type</th> 
