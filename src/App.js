@@ -94,7 +94,7 @@ function App() {
             </div>
             <div className="image-view">
               <div className="image"></div>
-              <div className="content">Donate blood, donate life! Donate blood, save life! Donate blood, give a smile to someone. Donate blood and gift someone a precious life.</div>
+              <div className="content">Donate blood, donate life! Donate blood, save life! Donate blood, give a smile to someone. <br /> Donate blood and gift someone a precious life.</div>
             </div>
         </div> 
 
