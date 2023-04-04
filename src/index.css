@@ -38,6 +38,12 @@ body {
   padding-top: 20px;
   /* text-shadow: 10px 10px 10px 10px blue ;.. */
 }
+.inside-box-card{
+  width: 100%;
+  /* border: 2px solid red; */
+  padding-left: 5%;
+  padding-right: 5%;
+}
 .card-description{
   text-align: center;
   color: black;
@@ -48,69 +54,245 @@ body {
   /* text-shadow:; */
 }
 .card{
-  width: 100%;
+  /* width: 90%; */
   height: max-content;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
   padding-top: 60px;
-  padding-bottom:60px;
+  padding-bottom: 60px;
   background-color:rgb(155, 195, 116);
+  position: relative;
+  border-radius: 23px;
+  /* margin: 0 auto; */
   /* align-items: center; */
-  
 }
 .card-val-1{
   background-image: url('img/blood_camp.JPG');
-  width: 400px;
+  /* width: 400px; */
+  width: 40%;
   height: 300px;
   background-repeat: no-repeat;
-  background-size: 400px 300px; 
+  background-size: 100% 300px; 
   border: 2px solid black;
   padding: 2%;
   margin: 0 auto;
   cursor: pointer;
   border-radius: 12px;
   margin-bottom: 23px;
+  position: relative;
+  top: 0;
 }
+.card-val-1:hover{
+  top: -16px;
+}
+
 .card-val-2{
   background-image: url('img/donation_center.JPG');
-  width: 400px;
+  width: 40%;
   height: 300px;
   background-repeat: no-repeat;
-  background-size: 400px 300px; 
+  background-size: 100% 300px; 
   border: 2px solid black;
   padding: 2%;
   margin:0 auto;
   cursor: pointer;
-  /* margin: 5%; */
   border-radius: 12px;
   margin-bottom: 23px;
+  position: relative;
+  top: 0;
+}
+.card-val-2:hover{
+  top: -16px;
 }
 .card-val-3{
   background-image: url('img/blood\ image.JPG');
-  width: 400px;
+  width: 40%;
   height: 300px;
   background-repeat: no-repeat;
-  background-size: 400px 300px; 
+  background-size: 100% 300px; 
   border: 2px solid black;
   padding: 2%;
   margin:2%;
   cursor: pointer;
-  /* margin: 5%; */
   border-radius: 12px;
   margin:0 auto;
   margin-bottom: 23px;
+  position: relative;
+  top: 0;
+}
+.card-val-3:hover{
+  top: -16px;
+}
+.card-desc-1{
+  width: max-content;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 8px;
+  color: white;
+  font-weight: 700;
+  border: 4px solid black;
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  opacity: 0;
+  background-color: rgb(112, 173, 199);
+}
+.card-desc-2{
+  width: max-content;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 8px;
+  color: white;
+  font-weight: 700;
+  border: 4px solid black;
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  opacity: 0;
+  background-color: rgb(112, 173, 199);
+
+}
+.card-desc-3{
+  width: max-content;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 8px;
+  color: white;
+  font-weight: 700;
+  border: 4px solid black;
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  opacity: 0;
+  background-color: rgb(112, 173, 199);
 }
 .card-val-1:hover{
   box-shadow: 1px 1px 1px 2px  rgb(73, 67, 67);
+  opacity: 1;
 }
 .card-val-2:hover{
   box-shadow: 1px 1px 1px 2px  rgb(73, 67, 67);
 }
 .card-val-3:hover{
   box-shadow: 1px 1px 1px 2px  rgb(73, 67, 67);
+  visibility: visible;
+}
+.card:hover .card-desc-1{
+  opacity: 1;
+}
+.card:hover .card-desc-2{
+  opacity: 1;
+}
+.card:hover .card-desc-3{
+  opacity: 1;
 }
 
+/* it is for the content view that is with image and the text*/
+.content-view{
+  width: 90%;
+  height:max-content;
+  /* border: 2px solid black; */
+  margin-left: 5%; margin-top:40px;
+  margin-bottom: 19px;
+  border-radius: 23px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 19px;  
+  justify-content: center;
+  background-color:rgb(155, 195, 116);
+}
+
+.blood-type-view{
+  height: max-content;
+  border: 2px solid black;
+  border-radius: 12px;
+  background-color: rgb(173, 136, 136);
+  margin-right: 23px;
+  margin-bottom: 16px;
+}
+.blood-type-view:hover{
+  box-shadow: 4px 2px 4px 2px rgb(106, 91, 91);
+  /* margin: ; */
+}
+.image-view{
+  width: 60%;
+  height: 460px;
+  /* border: 2px solid black; */
+  border-radius: 16px;
+  padding: 4px;
+}
+.image{
+  width: 100%;
+  height: 320px;
+  border: 2px solid black;
+  background-image: url('img/blood-donation.JPG');
+  /* background: no-repeat; */
+  background-size: 100% 300px;
+  border-radius: 12px;
+  /* background-position: center; */
+}
+.image:hover{
+  box-shadow: 4px 2px 4px 2px rgb(106, 91, 91);
+}
+.content{
+  width: 100%;
+  height: max-content;
+  margin-top: 19px;
+  /* border: 2px solid black; */
+  padding: 14px;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: 14px;
+  color: blue;
+}
+
+th{
+  border-right: 2px solid black;
+  font-weight: 900;
+  color: blue;
+}
+th:last-child{
+  border-right: none;
+}
+td{
+  border-right: 2px solid black;
+  font-weight: 700;
+  text-align: center;
+}
+td:last-child{
+  border-right: none;
+}
+tr{
+  border-bottom: 2px solid black;
+}
+tr:last-child.last-one{
+  border-bottom: none;
+}
+
+.blood-detail-donor{
+  width: 90%;
+  /* position: relative; */
+  /* left: px; */
+  text-align: center;
+  border: 2px solid black;
+  padding: 16px;
+  margin-left: 5%;
+  border-radius: 19px;
+  font-size: 19px;
+  font-weight: 600;
+  background-color: rgb(194, 192, 192);
+  /* color: whitesmoke; */
+  margin-bottom: 16px;
+}
+.donor-heading{
+  color: blueviolet;
+}
 /* this need to be added into the  key frame*/
 
 @media (max-width: 900px){
@@ -122,9 +304,6 @@ body {
     background-position: center;
     background-size: 25px 25px;
     cursor: pointer;
-    /* position: absolute;
-    left: 60px;
-    top: 25px; */
   }
   .navbar-brand{
     display: none;
@@ -136,4 +315,18 @@ body {
     padding-left: 20px;
   }
   
+}
+
+
+
+@media (max-width: 760px){
+  .card-val-1{
+    width: 80%;
+  }
+  .card-val-2{
+    width: 80%;
+  }
+  .card-val-3{
+    width: 80%;
+  }
 }
