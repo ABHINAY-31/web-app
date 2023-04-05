@@ -1,24 +1,11 @@
 import './App.css';
+import React from 'react';
+import { Route , Switch } from 'react-router-dom';
+import Details from './Component/DetailsFill';
+// import detailFill from './Component/detailFill'
 // import './Component/navbar.js'
 // when we do an npm start this particular section will resolve to what we view over the web
 // it's a complete site
-let name="abhinay";
-function navVisible(){
-  const myElement=document.getElementById("navbar-brand");
-  if(myElement!==null){
-    let val = myElement.style.display="block";
-    return val;
-  }
-  else alert("Not having value");
-  
-  // if(nav){
-  //   nav.style.display = "none";
-  // }
-  // else{
-  //   nav.style.display = "block";
-  // }
-  // console.log("printed")
-}
 
 function App() {
   return (
@@ -29,10 +16,10 @@ function App() {
       <div className="my_navigation">
         <nav className="navbar bg-body-tertiary">
             <div className="container-fluid">
-              {/* <img src="" alt="" /> */}
-              <a className="menu-icon" href="#" onClick={navVisible} target="_blank"></a>
+              <a className="menu-icon" href="#" target="_blank"></a>
               <a className="navbar-brand active" href="#">Home</a>
-              <a className="navbar-brand" href="#">Blood Banks</a>
+              {/* <Details></Details> */}
+              <a className="navbar-brand" href="detailFill"   target="_blank">Blood Banks</a>
               <a className="navbar-brand" href="#">Availability</a>
               <a className="navbar-brand" href="#">Donation Camps</a>
             </div>
