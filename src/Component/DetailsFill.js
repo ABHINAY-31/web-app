@@ -2,13 +2,12 @@
 function Details(){
     return(
         <>
-            {/* <div className="my-form-details">
-                Enter your Name: <input type="text" />
-            </div> */}
             <form>
-                <label>Enter Your Name: 
-                    <input type="text" />
-                </label>
+                Enter Your Name : <br /><input type="text" /> <br />
+                Donated Item Name: <br /><input type="text" /><br />
+                Enter The Quantity : <br /><input type="text" /><br />
+                Enter Your Address : <br /><input type="text" /><br />
+                <button >Submit</button>
             </form>
         </>
     );
