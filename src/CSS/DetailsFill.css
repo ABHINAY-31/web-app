@@ -1,0 +1,18 @@
+form{
+    width: 80%;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+}
+.my-button{
+    padding-left: 45%;
+}
+.form-label{
+    font-weight: 700;
+}
+button{
+    padding: 8px;
+    border-radius: 10px;
+    color: black;
+    font-weight: 700;
+    background-color: rgb(109, 109, 166);
+}
