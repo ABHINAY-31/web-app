@@ -9,6 +9,7 @@ import {
 import Nav from './Component/Nav'
 import DetailsFill from './Component/DetailsFill';
 import Home from './Component/Home'
+import Table from './Component/Table'
 // import detailFill from './Component/detailFill'
 // import './Component/navbar.js'
 // when we do an npm start this particular section will resolve to what we view over the web
@@ -27,8 +28,11 @@ function App() {
               <Route exact path='/'>
                 <Home/>
               </Route>
-              <Route exact path="/detailsfill">
+              <Route exact path="/DetailsFill">
                 <DetailsFill/>
+              </Route>
+              <Route exact path="/Table">
+                <Table/>
               </Route>
             </Switch>
         </Router>

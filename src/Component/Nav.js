@@ -14,7 +14,7 @@ const Nav = () =>{
                     <Link className="menu-icon" href="#" target="_blank"></Link>
                     <Link className="navbar-brand active" to="/">Home</Link>
                     <Link className="navbar-brand" to="/detailsfill">Blood Banks</Link>
-                    <Link className="navbar-brand" href="#">Availability</Link>
+                    <Link className="navbar-brand" to="/Table">Availability</Link>
                     <Link className="navbar-brand" href="#">Donation Camps</Link>
                 </div>
         </nav>
