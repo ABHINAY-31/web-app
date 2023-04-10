@@ -11,13 +11,13 @@ const Nav = () =>{
         <>
             <nav className="navbar bg-body-tertiary">
                 <div className="container-fluid">
-                    <Link className="menu-icon" href="#" target="_blank"></Link>
+                    <Link className="menu-icon" to = "/"></Link>
                     <Link className="navbar-brand active" to="/">Home</Link>
                     <Link className="navbar-brand" to="/detailsfill">Blood Banks</Link>
                     <Link className="navbar-brand" to="/Table">Availability</Link>
-                    <Link className="navbar-brand" href="#">Donation Camps</Link>
+                    <Link className="navbar-brand" to="/ApiDataTable">Donation Camps</Link>
                 </div>
-        </nav>
+            </nav>
         </>
     )
 }

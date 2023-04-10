@@ -16,13 +16,13 @@ const Home = () =>{
             <div className="inside-box-card">
                 <div className="card">
                     <div className="card-val-1">
-                      <div className="card-desc-1">Blood Donation</div>
+                      {/* <div className="card-desc-1">Blood Donation</div> */}
                     </div>
                     <div className="card-val-2">
-                      <div className="card-desc-2">Donation Camps</div>
+                      {/* <div className="card-desc-2">Donation Camps</div> */}
                     </div>
                     <div className="card-val-3">
-                      <div className="card-desc-3">Blood Availability</div>
+                      {/* <div className="card-desc-3">Blood Availability</div> */}
                     </div>
                 </div>
             </div>
