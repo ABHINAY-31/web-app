@@ -1,0 +1,21 @@
+.my-table{
+    padding: 24px;
+}
+.table-1{
+    width:90%;
+    border:2px solid black;
+    margin: 0 auto;
+}
+.td{
+    padding: 8px;
+}
+.td .th{
+    border-right: 4px;
+}
+.thead .tr .th{
+    padding: 12px;
+    text-align: center;
+}
+.td .tr{
+    border-right: 4px;
+} 

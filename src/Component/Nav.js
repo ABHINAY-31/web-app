@@ -13,8 +13,8 @@ const Nav = () =>{
                 <div className="container-fluid">
                     <Link className="menu-icon" to = "/"></Link>
                     <Link className="navbar-brand active" to="/">Home</Link>
-                    <Link className="navbar-brand" to="/detailsfill">Blood Banks</Link>
-                    <Link className="navbar-brand" to="/Table">Availability</Link>
+                    <Link className="navbar-brand" to="/detailsfill">Data Form</Link>
+                    <Link className="navbar-brand" to="/Table">Display Data</Link>
                     <Link className="navbar-brand" to="/ApiDataTable">Donation Camps</Link>
                 </div>
             </nav>

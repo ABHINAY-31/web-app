@@ -6,6 +6,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #DAF5FF;
+  background: #9ab6c1;
+}
+.navbar{
+  position: sticky;
+  top: 0;
 }
 .container-fluid{
   /* background-color: cadetblue; */
@@ -17,20 +22,23 @@ body {
   padding-top:10px;
   padding-bottom:10px;
   border-radius: 23px;
+  /* position: sticky; */
 }
 .navbar-brand{
   color:black;
 }
-.active{
+/* .active{
   background-color: rgb(94, 94, 145);
   padding:10px;
   border-radius: 12px;
   color:white;
-}
+} */
 .container-fluid .navbar-brand:hover{
   cursor: pointer;
   /* background-color: rgb(94, 94, 145); */
-  color:blueviolet;
+  color:rgb(57, 47, 66);
+  padding: 2px;
+  border-bottom: 2px solid #425a52;
 }
 .my-view{
   width: 100%;
@@ -251,7 +259,7 @@ body {
   width: 100%;
   height: 320px;
   /* border: 2px solid black; */
-  background-image: url('img/ze23_cbcg_220606.jpg');
+  background-image: url('img/2003.JPG');
   /* background: no-repeat; */
   background-size: 100% 300px;
   border-radius: 12px;
@@ -367,3 +375,4 @@ tr:last-child.last-one{
     width: 100%;
   }
 }
+

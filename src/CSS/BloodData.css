@@ -1,3 +1,14 @@
+.container{
+  /* border: 2px solid black; */
+  margin-top: 2%;
+}
+.container tr th{
+  text-align: center;
+  /* margin: 0 auto; */
+}
+.container tr td{
+  border-bottom: 2px solid black;
+}
 .loading-container {
     display: flex;
     justify-content: center;
@@ -20,3 +31,21 @@
     }
   }
   
+  .table-1{
+    width:90%;
+    border:2px solid black;
+    margin: 0 auto;
+}
+.td{
+    padding: 8px;
+}
+.td .th{
+    border-right: 4px;
+}
+.thead .tr .th{
+    padding: 12px;
+    text-align: center;
+}
+.td .tr{
+    border-right: 4px;
+} 

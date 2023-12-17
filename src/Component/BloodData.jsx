@@ -9,6 +9,7 @@ function BloodData() {
 
   const fetchData = async () => {
         try {
+          // https://www.eraktkosh.in/BLDAHIMS/bloodbank/nearbyBB.cnt?hmode=GETNEARBYSTOCKDETAILS&stateCode=-1&districtCode=-1&bloodGroup=all&bloodComponent=11&lang=0&_=1682851160968
           const response = await axios.get('https://www.eraktkosh.in/BLDAHIMS/bloodbank/nearbyBB.cnt?hmode=GETNEARBYSTOCKDETAILS&stateCode=-1&districtCode=-1&bloodGroup=all&bloodComponent=11&lang=0&_=1682851160968');
           setData(response.data);
         } catch (error) {
@@ -49,13 +50,13 @@ if (data.data.length) {
     })
     allData = temp.map((val) => {
         return (
-        <tr key = {val[0]}>
-            <td dangerouslySetInnerHTML={{ __html: val[0] }}></td>
-            <td dangerouslySetInnerHTML={{ __html: val[1] }}></td>
-            <td dangerouslySetInnerHTML={{ __html: val[2] }}></td>
-            <td dangerouslySetInnerHTML={{ __html: val[3] }}></td>
-            <td className="text-danger">LIVE</td>
-            <td dangerouslySetInnerHTML={{ __html: val[5] }}></td>
+        <tr key = {val[0]} className="tr">
+            <td className="td" dangerouslySetInnerHTML={{ __html: val[0] }}></td>
+            <td className="td" dangerouslySetInnerHTML={{ __html: val[1] }}></td>
+            <td className="td" dangerouslySetInnerHTML={{ __html: val[2] }}></td>
+            <td className="td" dangerouslySetInnerHTML={{ __html: val[3] }}></td>
+            <td className="td text-danger">LIVE</td>
+            <td className="td" dangerouslySetInnerHTML={{ __html: val[5] }}></td>
         </tr>
         )
     })
@@ -63,18 +64,18 @@ if (data.data.length) {
 return (
     <>
       <div className = "container">
-        <table>
-          <thead>
-            <tr>
-              <th>S.No.</th>
-              <th>Blood Bank</th>
-              <th>Category</th>
-              <th>Availability</th>
-              <th>Last Updated</th>
-              <th>Type</th>
+        <table className="table-1">
+          <thead className="thead">
+            <tr className="tr">
+              <th className="th">S.No.</th>
+              <th className="th">Blood Bank</th>
+              <th className="th">Category</th>
+              <th className="th">Availability</th>
+              <th className="th">Last Updated</th>
+              <th className="th">Type</th>
             </tr>
           </thead>
-          <tbody>{allData}</tbody>
+          <tbody className="tbody">{allData}</tbody>
         </table>
       </div>
     </>

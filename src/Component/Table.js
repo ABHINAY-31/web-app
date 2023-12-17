@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-
+import '../CSS/Table.css'
 function Table(){
     const [data, setData] = useState([]);
 
@@ -20,34 +20,36 @@ function Table(){
     
     const tableData = data.map((val, index) => {
         return (
-        <tr key = {index}>
-            <td>{val.name}</td>
-            <td>{val.email}</td>
-            <td>{val.address}</td>
-            <td>{val.itemName}</td>
-            <td>{val.itemQuantity}</td>
-            <td>{val.mobileNumber}</td>
-            <td> <button>Add</button> </td>
+        <tr key = {index} className="tr">
+            <td className="td">{val.name}</td>
+            <td className="td">{val.email}</td>
+            <td className="td">{val.address}</td>
+            <td className="td">{val.itemName}</td>
+            <td className="td">{val.itemQuantity}</td>
+            <td className="td">{val.mobileNumber}</td>
+            <td className="td"> <button>Add</button> </td>
         </tr>
         )
     })
     return(
         <>
-        <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Address</th>
-                <th>ItemName</th>
-                <th>ItemQuantity</th>
-                <th>MobileNumber</th>
+        <div className="my-table">
+        <table className="table-1">
+        <thead className="thead">
+            <tr className="tr">
+                <th className="th">Name</th>
+                <th className="th">Email</th>
+                <th className="th">Address</th>
+                <th className="th">ItemName</th>
+                <th className="th">ItemQuantity</th>
+                <th className="th">MobileNumber</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody className="tbody">
             {tableData}
         </tbody>
-    </table>
+        </table>
+        </div>
         </>
     )
 }

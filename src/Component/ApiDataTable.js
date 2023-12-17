@@ -1,12 +1,8 @@
-
-
-function Api(){
-
-
+function ApiDataTable(){
     return(
         <>
             <h1>Hello</h1>
         </>
     )
 }
-export default Api;
+export default ApiDataTable;
