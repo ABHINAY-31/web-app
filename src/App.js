@@ -12,6 +12,7 @@ import DetailsFill from './Component/DetailsFill';
 import Home from './Component/Home'
 import Table from './Component/Table'
 import BloodData from './Component/BloodData';
+import LogOut from './Component/LogOut'
 // import ApiDataTable from ''
 // import detailFill from './Component/detailFill'
 // import './Component/navbar.js'
@@ -45,6 +46,7 @@ function App() {
               </Route>
             </Switch>
         </Router>
+      {/* <LogOut></LogOut> */}
       </div>
     </>
       // <h1 className="my_name">Hello everyone</h1>

@@ -26,6 +26,7 @@ function Details() {
             "http://localhost:5000/userdata/add",
             userData
         );
+        alert('data is added into the database')
         console.log(response.data);
     } catch (error) {
         console.log(error);

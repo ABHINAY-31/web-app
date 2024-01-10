@@ -7,8 +7,9 @@ function Table(){
     const getData = async () => {
         try {
             const response = await axios.get("http://localhost:5000/userdata");
-            console.log(response.data); // check the value of response.data
+            // console.log(response.data); // check the value of response.data
             setData((prevState) => [...prevState, ...response.data]);
+            // alert('data is added into the database')
         } catch (error) {
             console.log(error);
         }
